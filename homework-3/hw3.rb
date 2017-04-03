@@ -1,10 +1,15 @@
-#PROBLEM1
+# PROBLEM1
 # def count_words(phrase)
 #   frequency = {}
-#   array_of_words = phrase.scan(/\w+/)
-#   array_of_words.each do |word, times|
-#     frequency[word]  += 1
+#   array_of_words = phrase.split
+#   array_of_words.each do |word|
+#     if frequency[word]
+#       frequency[word] = frequency[word] + 1
+#     else
+#       frequency[word] = 1
+#     end
 #   end
+#   frequency
 # end
 #
 # puts(count_words('it was the best of times, it was the worst of times'))
