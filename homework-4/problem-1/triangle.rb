@@ -1,12 +1,11 @@
 class Triangle
-  def initilize (x, y, z)
+  def initialize(x, y, z)
     @x = x
     @y = y
     @z = z
 
     raise(TriangleError)
-      if @x <= 0 || @y <= 0 || @z <= 0 || ([@x, @y, @z].max * 2) >= (@x + @y + @z)
-
+    if @x <= 0 || @y <= 0 || @z <= 0 || ([@x, @y, @z].max * 2) >= (@x + @y + @z)
   end
   def kind
     if @x == @y && @x == @z && @y == @z
@@ -14,7 +13,7 @@ class Triangle
     elsif @x != @y && @x != @z && @y != @z
       :scalene
     else
-      :isoceles
+      :isosceles
     end
   end
 end
