@@ -34,20 +34,20 @@
 #   repeat_string('hello', 5)
 
 
-  #
-  # def calendar(names, dates)
-  #
-  #   result = {}
-  #
-  #   names.each_with_index do |name, index|
-  #     result[name] = dates[index]
-  #   end
-  #
-  # result
-  # end
-  #
-  #  puts(calendar(['Independence Day', 'Halloween', 'Christmas'], ['4 July', '31 October', '25 December']))
+
+  def calendar(names, dates)
+
+    result = {}
+
+    names.each_with_index do |name, index|
+      result[name] = dates[index]
+    end
+
+  result
+  end
+
+   puts(calendar(['Independence Day', 'Halloween', 'Christmas'], ['4 July', '31 October', '25 December']))
 
 #PROBLEM#
 #I think an instance variable referns to a variable that is used multiple times within in different classes.  Like when you call the instance of a class; you can also use an instance variable when you call different classes.
-#upto(limit) {|i| block } → self : displays the integers from one to the interger assigned to limit 
+#upto(limit) {|i| block } → self : displays the integers from one to the interger assigned to limit
