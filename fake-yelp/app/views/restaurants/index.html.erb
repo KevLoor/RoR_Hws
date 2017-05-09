@@ -1,0 +1,10 @@
+<h1>FAKE YELP  ¯\_(ツ)_/¯</h1>
+<h2>Restaurants</h2>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li><%= link_to(restaurant.name, restaurant) %></li>
+  <% end%>
+</ul>
+
+<p><%= link_to('Add a NEW Restaurant!!', new_restaurant_path(@restaurant)) %></p>
